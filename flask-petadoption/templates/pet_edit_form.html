@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{%  block title %}<title>Edit pet</title>{% endblock %}
+
+{% block content %}
+<div class="section">
+    <form action="/{{petid}}" method="POST">
+        {{ form.csrf_token() }}
+        <div class="petform">
+            <p>Name</p>
+            {{ form.name }}
+            <p>Species</p>
+            {{ form.species }}
+            <p>Image URL</p>
+            {{ form.photo_url }}
+            <p>Age</p>
+            {{ form.age }}
+            <p>Notes</p>
+            {{ form.notes }}
+            <p>Available</p>
+            {{ form.available }}
+            <button type="submit" class="button" >Save</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

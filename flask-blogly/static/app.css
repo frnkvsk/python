@@ -1,0 +1,157 @@
+body {
+    background: rgb(238, 237, 237);
+}
+
+form,
+textarea {
+    width: 100%;
+}
+
+input {
+    height: 30px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.container {
+    width: 50%;
+    background: white;
+    border: 1px solid rgb(197, 196, 196);
+    border-radius: 5px;
+}
+
+.user-detail
+.create-user-btn,
+.create-user {
+    background: white;
+    width: 100%;
+    margin: 10px 5px 0 0;
+}
+
+.create-user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-detail {
+    display: flex;
+    width: 100%;
+}
+
+.user-control {
+    width: 100%;
+    margin: 5px 0 5px 25px;
+}
+
+.user-control-row {
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;    
+}
+
+.user-control-row-label {
+    width: 20%;
+}
+
+.user-control-row-input {
+    width: 80%;
+}
+
+.create-post-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 99%;
+    margin-bottom: 8px;
+}
+
+.create-user-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.edit-post {
+    border: 1px solid red;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;  
+    border-radius: 50px;  
+}
+
+.btn {
+    margin: 5px 2px 5px 2px;
+}
+
+.btn-dark {
+    color: white;
+    background: gray;
+    margin-bottom: 10px;
+}
+
+.btn-post-btn {
+    color: white;
+    background: rgb(14, 158, 202);
+}
+
+.btn-outline-info {
+    background: white;
+    color: rgb(1, 159, 187);
+    border: 1.3px solid rgb(1, 159, 187);
+}
+
+.tags {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.posts {
+    width: 90%;
+}
+
+.posts-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 60px;
+}
+
+.posts-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-container {
+    font-size: 18px;
+}
+
+.checkbox-tag {
+    display: flex;
+}
+
+.form-check {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.label-tag {
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    background: rgb(2, 125, 248);
+    padding: 2px 4px 2px 4px;
+    border-radius: 5px;
+}

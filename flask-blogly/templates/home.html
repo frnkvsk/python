@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{%  block title %}<title>Homepage</title>{% endblock %}
+
+{% block content %}
+<div class="user-detail">    
+    <div class="user-control">
+        {% for post in posts[:5] %}
+        <div class="posts">
+            <div class="posts-top">               
+                <div class="img" style="background-image: url('{{user.image_url}}');"></div>
+                {{post.title}}  
+            </div>
+            <div class="posts-bottom">
+                {% for line in post.content.split('\r') %}
+                    <h3>{{line}}</h3>
+                {% endfor %}
+                <p>By {{user.full_name}} on {{post.created_at.strftime('%a %b %d %Y, %I:%M %p')}}</p>
+                <div>
+                    <p class="tags">
+                        Tags:
+                        {% for tag in post.tags %}
+                        <label class="label-tag">{{tag.name}}</label>
+                        {% endfor %}
+                    </p>
+                </div>
+            <hr>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

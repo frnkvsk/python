@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{%  block title %}<title>Blogly</title>{% endblock %}
+
+{% block content %}
+<h1>Users</h1>
+<ul>
+    {% for row in users %}
+    <li><a href="/users/{{row.id}}">{{row.full_name}}</a> </li>
+    {% endfor %}
+</ul>
+<form action="/users/new" method="GET">
+    <button type="submit" class="btn btn-dark">Add user</button>
+</form>
+{% endblock %}

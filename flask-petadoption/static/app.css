@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background: rgb(210, 231, 238);
+    font-family: 'Montserrat';
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-wrapper {    
+    background: rgb(184, 226, 240);
+}
+
+.hero-wrapper,
+.container {    
+    width: 70%;      
+}
+
+.wrapper {
+    padding: 1.5em;
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header,
+ul,
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .6em;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    width: 250px;
+    height: 400px;
+    text-align: center;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    margin: 8px;
+    background: rgb(245, 245, 245);
+}
+
+.pet-image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.image {    
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px; 
+}
+
+.pet-label {
+    display: flex;
+    justify-content: center;
+}
+
+.petform {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 5px 0;    
+}
+
+input,
+#species {
+    height: 25px;
+    border: 1.5px solid rgb(182, 181, 181);
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+/* -------------BUTTONS------------------------ */
+.button {
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 24px;
+    text-decoration:none;
+    margin: 10px 0 10px 0;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}

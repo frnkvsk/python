@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{%  block title %}<title>Homepage</title>{% endblock %}
+
+{% block content %}
+<div class="section">
+{% for pet in pets|sort(attribute='available', reverse=True) %}    
+    <div class="grid">
+        <h2>{{pet.name}}</h2>
+        <div class="pet-image">
+            <img class="image" src="{{pet.photo_url}}" alt="pet photo">
+        </div>   
+        <div class="pet-label">
+            {% if pet.available %}
+            <h2>Pet Available</h2>
+            {% else %}
+            <p>Pet Not Available</p>
+            {% endif %}
+        </div>
+        <div class="pet-label">
+            <form action="/{{pet.id}}">
+                <button class="button" >Edit pet</button>
+            </form>
+        </div>            
+    </div>
+{% endfor %}     
+</div>
+{% endblock content %}
